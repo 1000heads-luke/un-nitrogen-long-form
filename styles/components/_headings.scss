@@ -1,0 +1,26 @@
+.main-heading {
+    font-size: 3em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: $White2;
+    padding: 30px 0;
+}
+
+.sub-heading h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: $Blue;
+    padding: 0 0 20px 0;
+}
+
+hr.line {
+    color: $White2 !important;
+    height: 3px;
+    @include md {
+        height: 10px !important;
+    }
+}
+
+.white-heading * {
+    color: white !important;
+}

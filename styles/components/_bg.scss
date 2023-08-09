@@ -1,0 +1,170 @@
+section {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    &.top {
+        top: 0;
+    }
+    &.bottom {
+        bottom: 0;
+    }
+}
+
+.visual-container {
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.visual {
+    width: 100%;
+    z-index: -1 !important;
+    &.cycle {
+        width: 85%;
+        @include md {
+            width: 100%;
+        }
+        // max-width: 400px;
+        // // @include lg {
+        // //     max-width: 800px;
+        // // }
+        // // @include xl {
+        // //     max-width: 1000px;
+        // // }
+    }
+    &.multiply {
+        // mix-blend-mode: multiply;
+    }
+    &.darken {
+        // mix-blend-mode: darken;
+    }
+}
+
+.hotspots {
+    position: relative;
+    top: 0;
+    left: 0;
+    .hotspot {
+        position: absolute;
+        &.one {
+            top: 25%;
+            left: 10%;
+        }
+        &.two {
+            top: 65%;
+            left: 30%;
+        }
+        &.three {
+            top: 40%;
+            left: 40%;
+        }
+        &.four {
+            top: 45%;
+            right: 20%;
+        }
+        &.five {
+            top: 15%;
+            right: 30%;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    z-index: 6;
+    &.cloud {
+        right: 0;
+        top: 0;
+        width: 50%;
+    }
+    &.cloud-blue {
+        bottom: -100px;
+        &.left {
+            left: 0;
+            width: 50%;
+            transform: rotate(-20deg);
+        }
+        &.right {
+            right: 0;
+            width: 25%;
+            transform: rotate(45deg);
+        }
+    }
+    &.bubble {
+        &.left {
+            left: 50px;
+            bottom: -50px;
+            width: 100px;
+        }
+        &.right {
+            right: 150px;
+            bottom: -80px;
+        }
+        &.top {
+            top: -50px;
+        }
+    }
+}
+
+#swamp-bg {
+    background: initial;
+    background-image: url("../../assets/05_section/04a.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    p {
+        color: white;
+    }
+}
+
+.cereal-main-container {
+    // display: flex;
+    // justify-content: flex-start;
+
+    .cereal-wrapper {
+        // height: 250px;
+        // @include md {
+        //     height: 350px;
+        // }
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-end;
+        // align-items: center;
+        text-align: center;
+        img {
+            width: 80%;
+            margin: 10px 0 0 0;
+        }
+    }
+}
+
+.biodiversity-img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+// .visual.misaligned-image-1 {
+//     transform: translateY(20%) !important;
+// }
+
+// .visual.misaligned-image-2 {
+//     transform: translateY(-20%) !important;
+// }

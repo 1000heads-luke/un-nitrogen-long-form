@@ -1,0 +1,36 @@
+.carousel-sub-heading {
+    font-size: 18px;
+    color: #205d91 !important;
+    min-height: 75px;
+}
+
+.carousel-card {
+    box-shadow: 1px 0px 9px 0px #00000026;
+    border-radius: 10px;
+    overflow: hidden;
+    image {
+        width: 100%;
+    }
+    .carousel-img-wrapper {
+        width: 100%;
+    }
+}
+
+.carousel-row {
+    // margin-left: 40px;
+    .item {
+        // margin-right: 40px;
+        // max-width: 300px;
+        // min-width: 200px;
+        // min-height: 200px;
+    }
+    .carousel-text-wrapper {
+        padding: 5px;
+    }
+}
+
+.row-sub-heading {
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+}

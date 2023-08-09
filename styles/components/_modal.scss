@@ -1,0 +1,41 @@
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.modal-content {
+    border: none !important;
+    background: rgba(255, 255, 255, 0.75) !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    min-height: 500px;
+    padding: 20px;
+    .modal-borders {
+        border-bottom: 1px solid #205d91;
+        @include lg {
+            border-bottom: 0px;
+            border-left: 1px solid #205c912c;
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: spin 25s linear infinite;
+}
+
+.hotspot {
+    cursor: pointer;
+}

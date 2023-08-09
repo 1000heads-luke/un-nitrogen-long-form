@@ -1,0 +1,31 @@
+.accordion-body {
+    padding: 0 !important;
+
+    &.flex-nitrogen {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    padding: 10px 0;
+    background: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding: 10px 0 20px 0;
+}
+
+.accordion-flush {
+    background: transparent !important;
+}
+
+.accordion-item {
+    background: transparent !important;
+}

@@ -1,0 +1,87 @@
+.text-card {
+    z-index: 5 !important;
+    background: white;
+    border-radius: 0 50px 50px 0;
+    padding: 50px 30px 50px 10px;
+    margin: 20px 20px 10px 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0px;
+    &.grey {
+        background-color: $White2;
+    }
+    p {
+        padding: 20px 0 0 0;
+    }
+    @include md {
+        padding: 50px 0 0 0;
+        margin: 20px 20px 75px 0;
+        border-radius: 50px 50px;
+        margin-top: 0px;
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding: 10px 40px;
+        }
+        &.no-image {
+            padding: 50px 0;
+            overflow: visible !important;
+        }
+    }
+
+    &.air-card {
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    &.bee-card {
+        position: relative;
+    }
+    .bee {
+        position: absolute;
+        width: 200px;
+        @include sm {
+            width: 300px;
+        }
+    }
+    &.stakeholder-card {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+article.container {
+    padding: 0;
+    @include md {
+        padding: inherit;
+    }
+}
+
+.stakeholder-img-1 {
+    background-image: url("/assets/09_section/01b.png");
+}
+
+.stakeholder-img-2 {
+    background-image: url("/assets/09_section/02b.png");
+}
+
+.stakeholder-img-3 {
+    background-image: url("/assets/09_section/03b.png");
+}
+
+.stakeholder-img-4 {
+    background-image: url("/assets/09_section/04b.png");
+}
+
+.stakeholder-img-5 {
+    background-image: url("/assets/09_section/05b.png");
+}
+
+.stakeholder-img-6 {
+    background-image: url("/assets/06_section/09a.png");
+}
